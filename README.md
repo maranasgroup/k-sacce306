@@ -17,11 +17,11 @@ results structure (res)
 the MATLAB res structure contains information for the kinetic parameterization:
 - fmin: SSR value
 - kinetic_params: kf, kr, ki predicted parameters 
-- predictions: structure contains predictions for fluxes and relative metabolite concentrations to WT
+- predictions: structure contains predictions for fluxes and relative metabolite concentrations to wild-type (WT)
 
 K-FIT kinetic models for Saccharomyces cerevisiae CEN.PK and BY4 are found in the 'CEN solutions' and 'BY4741 solutions' folders
 
 Note about input fluxomics data
-- Fluxomics data requires the wild-type flux distribution and at least one single-gene deletion flux distribution. 
+- Fluxomics data requires the WT flux distribution and at least one single-gene deletion flux distribution. 
 - K-FIT can converge to a stable solution more frequently if the flux distribution data is scaled to 100 WT glucose uptake rate
 - It is possible to use data with more than one single-gene deletion and over- or under-expression (levels of expression needs to be specified, and assuming level of over- or under- expression as a proxy for enzyme levels) but would require manual code additions to the matlab run file (i.e., parallel_run_all*.m). User would need to modify the model.v.pert(x,y) matrix to specify relative enzyme concentrations, where x is the reaction index number and y is the pertrubed dataset column number. For an example, please see the run_kctherm138.m file at https://github.com/maranasgroup/k-ctherm138 (https://doi.org/10.1016/j.ymben.2021.12.012)
