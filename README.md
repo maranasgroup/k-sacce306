@@ -1,6 +1,6 @@
 # k-sacce306
 Kinetic models parameterized using the Kinetic Fluxomics Integration Tool (K-FIT). The original files can be found at https://github.com/maranasgroup/K-FIT (https://doi.org/10.1016/j.ymben.2020.03.001). 
-K-FIT kinetic models for Saccharomyces cerevisiae CEN.PK and BY4
+
 
 # Run instructions 
 Input files required are:
@@ -18,3 +18,5 @@ the MATLAB res structure contains information for the kinetic parameterization:
 - fmin: SSR value
 - kinetic_params: kf, kr, ki predicted parameters 
 - predictions: structure contains predictions for fluxes and relative metabolite concentrations to WT
+
+K-FIT kinetic models for Saccharomyces cerevisiae CEN.PK and BY4 are found in the 'CEN solutions' and 'BY4741 solutions' folders
